@@ -20,7 +20,6 @@ Coffee Shop Orders List: </h1></header>
 
 <!--  <input type="hidden" name="orderID" value="${orderToEdit.orderID}">-->
 <h2>Please select one order to edit/add drink to or delete. </h2>
-<h5>Testing to see which version works - looks best - version 1</h5>
 <table>
 <c:forEach items="${requestScope.allOrders}" var="currentorder">
 <tr>
@@ -47,16 +46,17 @@ Drink(s):
 </div>
 <br/>
 <br>
-<div>
-<form method = "post" action="orderNavigationServlet">
+<!-- <div> 
+<h5>Testing to see which version works - looks best - version 1</h5>
+<form method = "post" action="orderNavigationServlet"> -->
 <!-- <input type="hidden" name="orderID" value="${orderToEdit.orderID}"> -->
-<h2>Please select one order to edit/add drink to or delete. </h2>
+<!--  <h2>Please select one order to edit/add drink to or delete. </h2>
 <h5>Testing to see which version works - looks best - version 2 using displayOrderDetails</h5>
 <table>
 <c:forEach items="${requestScope.allOrders}" var="currentorder">
-<tr>
+<tr>-->
 <!-- <td><input type="hidden" name="orderID" value="${currentorder.orderID}"></td>-->
-<td><input type="radio" name="orderID" value="${currentorder.orderID}"></td> 
+<!--  <td><input type="radio" name="orderID" value="${currentorder.orderID}"></td> 
 
 <td>${currentorder.displayOrderDetails()}</td>
 <tr><td><br></td></tr>
@@ -68,9 +68,9 @@ Drink(s):
 <input type ="submit" value = "addToOrder" name="doThisToOrder">
 
 </form>
-</div>
+</div> -->
 <br />
-<div>
+<div> 
 <nav>
 <a href="index.html">Return to main page to start a new order</a><br />
 <!-- <a href="viewAllCustomersServlet">View list of all Customers in table</a><br /> -->
